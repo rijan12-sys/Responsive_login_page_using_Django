@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        {%load static%}
+        <link rel="stylesheet" href="{%static 'clone.css'%}">
+        <link rel="stylesheet" href="{%static 'bootstrap.min.css'%}">
+
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-3 col-md-3 col-lg-3">
+                    <img class = " mt-5 imageOne"src="{%static 'connect.jpg'%}" alt="">
+                </div>
+            <div class = "col-sm-6 col-lg-6 col-md-6 form mt-5">
+                {% if message %}
+                <div class="alert alert-danger" role="alert">
+                    {{message}}                 
+                 </div>
+                {% endif %}
+                <form action="/home" method ="post">
+                    {% csrf_token %}
+                    <h1 class = "text-center logo mt-2 mb-5">Clone</h1>
+                    <span id = 'user'>Username:</span>
+                    <input class = "form-control mb-4"type="text" name="userTwo" id="username">
+                    <span id = "pass" >Password:</span>
+                    <input class = "form-control" type="text" name="passOne" id="password">
+                    <button class = "btn btn-dark form-control mt-5 mb-5 ">Submit</button>
+                    <p class = "text-center accountCreate mb-5">create an account</p>
+                    <a id = "signUpinsignIn" href="/signUp">Sign Up</a>
+                </form>
+            </div>
+            <div class ="col-sm-3 col-md-3 col-lg-3">
+                <img class = " mt-5  imageTwo"src="{%static 'connectTwo.jpg'%}" alt="">
+            </div>         
+            </div>
+        </div>      
+    </body>
+</html>
+
+
+<!-- <button type = "submit" name = "submit"class = "btn btn-secondary btn-lg mb-4 ">Sign Up</button> -->

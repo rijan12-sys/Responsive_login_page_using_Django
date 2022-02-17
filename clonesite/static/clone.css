@@ -1,0 +1,32 @@
+/* signIn page code */
+.form{
+    border: 1px solid black ;
+}
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid black;
+}
+.imageOne{
+    width:115%;
+    height:120%;
+}
+
+.imageTwo{
+    width:130%;
+    height:120%;
+
+}
+.accountCreate{
+    border-bottom: 1px solid black;
+}
+
+#signUpinsignIn{
+    margin-left: 40%;
+}
+
+
+
+/* Sign up page code */
+.imageTwo{
+    margin-top: 20%;
+}
